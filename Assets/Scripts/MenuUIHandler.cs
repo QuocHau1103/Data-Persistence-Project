@@ -11,6 +11,8 @@ public class MenuUIHandler : MonoBehaviour
     {
         GameManager.Instance.LoadNameAndBestScore();
         UpdateBestScoreText();
+
+        nameInputField.text = GameManager.Instance.GetBestPlayerName();
     }
 
     public void SubmitName()
